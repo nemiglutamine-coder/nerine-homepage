@@ -241,6 +241,12 @@
     border-radius:0 10px 10px 0; padding:16px 20px; font-size:14.5px; color:var(--ink-2);
   }
   .ahead b{color:var(--ink)}
+  .live-subhead{
+    font-family:"Shippori Mincho B1", serif; font-size:22px; font-weight:800; letter-spacing:.05em;
+    margin:36px 0 4px; display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+  }
+  .live-subhead .en{font-family:"Cormorant Garamond", serif; letter-spacing:.3em; font-size:11px; color:var(--amber); font-weight:600}
+  .live-subnote{color:var(--ink-2); font-size:14.5px; margin:0 0 16px; max-width:44em}
 
   /* profile */
   .profile-grid{display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:start}
@@ -362,6 +368,10 @@
   <h3>更新情報</h3>
   <button class="updates-close" id="updatesClose" type="button" aria-label="更新情報を閉じる">✕</button>
   <ul class="updates-list">
+    <li>
+      <time datetime="2026-11-24">2026.11.24</time>
+      <p>ライブ情報にリアルライブの日程を追加しました。</p>
+    </li>
     <li>
       <time datetime="2026-11-24">2026.11.24</time>
       <p>レパートリーを「オーイシマサヨシ Cover」「ソロギター Cover」「オリジナル曲」の3分類で掲載しました。</p>
@@ -492,6 +502,71 @@
         </div>
       </li>
 
+    </ul>
+
+    <h3 class="live-subhead">リアルライブ（現地）<span class="en">REAL LIVE</span></h3>
+    <p class="live-subnote">VRChatの定期ライブとは別に、現地会場で出演するライブの日程です。関西を中心に、少しずつ機会を増やしていきます。</p>
+
+    <ul class="sched">
+      <li class="event" data-kind="real">
+        <div class="date"><div class="yr">2026</div><div class="md">12/12</div><div class="dow">SAT</div></div>
+        <div>
+          <h3>聖月夜奏</h3>
+          <p class="where">開演 13:00 ／ Cafe&amp;Bar LOWGUNS（播磨町）</p>
+          <div class="tags"><span class="tag real">リアルライブ</span><span class="tag">チャージ ¥1,500＋オーダー</span></div>
+        </div>
+        <div class="act"></div>
+      </li>
+
+      <li class="event" data-kind="real">
+        <div class="date"><div class="yr">2026</div><div class="md">12/27</div><div class="dow">SUN</div></div>
+        <div>
+          <h3>アコースティックライブ No.65</h3>
+          <p class="where">開演 14:00 ／ 多目的スペース園（播磨町）</p>
+          <div class="tags"><span class="tag real">リアルライブ</span><span class="tag">入場料 ¥1,500（1ドリンク付き）</span></div>
+        </div>
+        <div class="act"></div>
+      </li>
+
+      <li class="event" data-kind="real">
+        <div class="date"><div class="yr">2027</div><div class="md">01/30</div><div class="dow">SAT</div></div>
+        <div>
+          <h3>ブッキングライブ</h3>
+          <p class="where">musicspace TELLUS（尼崎）</p>
+          <div class="tags"><span class="tag real">リアルライブ</span><span class="tag">詳細は決まり次第更新</span></div>
+        </div>
+        <div class="act"></div>
+      </li>
+
+      <li class="event" data-kind="real">
+        <div class="date"><div class="yr">2027</div><div class="md">02/13</div><div class="dow">SAT</div></div>
+        <div>
+          <h3>Morris FingerPicking Day 2027 西日本LIVE予選</h3>
+          <p class="where">三木楽器 Acoustic INN（大阪）</p>
+          <div class="tags"><span class="tag real">リアルライブ</span><span class="tag">LIVE予選</span></div>
+        </div>
+        <div class="act"></div>
+      </li>
+
+      <li class="event" data-kind="real">
+        <div class="date"><div class="yr">2027</div><div class="md">03/03</div><div class="dow">WED</div></div>
+        <div>
+          <h3>隠れ谷10周年記念LIVE</h3>
+          <p class="where">18:00以降入場可 ／ クラブ月世界（神戸・三ノ宮）</p>
+          <div class="tags"><span class="tag real">リアルライブ</span><span class="tag">入場料 ¥1,000＋ドリンク ¥700</span></div>
+        </div>
+        <div class="act"></div>
+      </li>
+
+      <li class="event" data-kind="real">
+        <div class="date"><div class="yr">2027</div><div class="md">03/13</div><div class="dow">SAT</div></div>
+        <div>
+          <h3>板宿ブッキングライブ</h3>
+          <p class="where">板宿（神戸）</p>
+          <div class="tags"><span class="tag real">リアルライブ</span><span class="tag">詳細は決まり次第更新</span></div>
+        </div>
+        <div class="act"></div>
+      </li>
     </ul>
 
     <div class="ahead">
